@@ -24,6 +24,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practice" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,8 +83,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585929470244</updated>
-      <workItem from="1585929473193" duration="580000" />
+      <workItem from="1585929473193" duration="680000" />
     </task>
+    <task id="LOCAL-00001" summary="add new package">
+      <created>1585930085947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585930085947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add new package" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new package" />
   </component>
 </project>
