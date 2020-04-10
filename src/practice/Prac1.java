@@ -9,7 +9,8 @@ package practice;
  */
 public class Prac1 {
 
-    /** 思路
+    /**
+     * 思路
      * 暴力查找
      */
     public boolean Find1(int target, int[][] array) {
@@ -23,7 +24,8 @@ public class Prac1 {
         return false;
     }
 
-    /** 思路
+    /**
+     * 思路
      * 矩阵是有序的，从左下角来看，向上数字递减，向右数字递增，
      * 因此从左下角开始查找，当要查找数字比左下角数字大，右移
      * 要查找数字比左下角数字小时，上移
