@@ -45,7 +45,7 @@ public class Prac3 {
 
 class ListNode{
     int val;
-    ListNode next;
+    ListNode next = null;
     ListNode(int val){
         this.val = val;
     }
