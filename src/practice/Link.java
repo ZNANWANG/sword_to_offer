@@ -14,14 +14,14 @@ public class Link {
         Scanner sc = new Scanner(System.in);
         do{
             System.out.println("输入长度 (输入0退出程序）：");
-            int l = sc.nextInt();
-            if(l == 0){
+            int len = sc.nextInt();
+            if(len == 0){
                 return;
             } else {
                 System.out.println("打印数组：");
                 Link.length = 0;
                 //调用数组生成方法 传入键盘值l
-                Link head = Link.create1(l);
+                Link head = Link.create2(len);
                 for (int i = 0; i < Link.length; i++) {
                     System.out.print(head.data + " ");
                     //把当前对象的下一个对象地址传给当前对象
