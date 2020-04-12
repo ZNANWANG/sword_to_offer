@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac16.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac17.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac18.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac19.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac21.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac22.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac23.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac24.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac25.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/prac25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/prac25_ReconnectNodes1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/prac25_clone3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Link.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Link.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Link.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac15.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,10 +50,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
     </key>
   </component>
@@ -69,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test">
+  <component name="RunManager" selected="Application.Main2">
     <configuration name="Link" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="practice.Link" />
       <module name="sword_to_offer" />
@@ -83,8 +83,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac12" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main2" />
+      <module name="sword_to_offer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prac24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac24" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +103,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac14" />
+    <configuration name="Prac25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac25" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -124,10 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Prac25" />
+        <item itemvalue="Application.Prac24" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.Link" />
-        <item itemvalue="Application.Prac14" />
-        <item itemvalue="Application.Prac12" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +152,8 @@
       <workItem from="1585929473193" duration="680000" />
       <workItem from="1586476595103" duration="16888000" />
       <workItem from="1586560907115" duration="18231000" />
-      <workItem from="1586595563013" duration="16533000" />
+      <workItem from="1586595563013" duration="17181000" />
+      <workItem from="1586650158967" duration="29962000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
