@@ -1,4 +1,4 @@
-package Interview;
+package interview;
 
 import java.util.*;
 
@@ -20,35 +20,35 @@ public class Main {
     /**
      * 50%，超时错误
      */
-    public static void getResult(Scanner sc){
+    public static void getResult(Scanner sc) {
         int n = sc.nextInt(); // 代表n组数据
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             int len = sc.nextInt(); //两个列表长度相等
             List<Integer> list1 = new ArrayList<>();
             List<Integer> list2 = new ArrayList<>();
 
-            for(int j = 0; j  < len; j++){
+            for (int j = 0; j < len; j++) {
                 list1.add(sc.nextInt());
             }
-            for(int j = 0; j  < len; j++){
+            for (int j = 0; j < len; j++) {
                 list2.add(sc.nextInt());
             }
             boolean inNumber = false;
             int count = 0;
-            for(int j = 0; j  < len; j++){
+            for (int j = 0; j < len; j++) {
                 int temp = list1.get(j) - list2.get(j);
-                if(temp != 0){
-                    if(!inNumber){
+                if (temp != 0) {
+                    if (!inNumber) {
                         inNumber = true;
                     }
-                } else if (temp > 0){
+                } else if (temp > 0) {
                     count = Integer.MAX_VALUE;
                     break;
                 } else {
-                    if(inNumber){
+                    if (inNumber) {
                         count++;
                         inNumber = false;
-                        if(count > 1){
+                        if (count > 1) {
                             break;
                         }
                     }
@@ -56,7 +56,7 @@ public class Main {
             }
             //System.out.println(count);
 
-            if(count < 2)
+            if (count < 2)
                 System.out.println("YES");
             else
                 System.out.println("NO");

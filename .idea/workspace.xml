@@ -76,11 +76,11 @@
       </method>
     </configuration>
     <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Interview.Main3" />
+      <option name="MAIN_CLASS_NAME" value="interview.Main3" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Interview.*" />
+          <option name="PATTERN" value="interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,7 +151,7 @@
       <workItem from="1586476595103" duration="16888000" />
       <workItem from="1586560907115" duration="18231000" />
       <workItem from="1586595563013" duration="17181000" />
-      <workItem from="1586650158967" duration="40314000" />
+      <workItem from="1586650158967" duration="40382000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>

@@ -1,4 +1,4 @@
-package Interview;
+package interview;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -85,7 +85,7 @@ public class Main3 {
         for (int i = 1; i < len; i++) {
             int[] temp = Arrays.copyOfRange(buildings, 0, i);
             int[] sub = new int[temp.length];
-            for(int j = 0; j  < temp.length; j++){
+            for (int j = 0; j < temp.length; j++) {
                 sub[j] = temp[temp.length - j - 1];
             }
             System.out.println("Sub: " + Arrays.toString(sub));
@@ -111,14 +111,14 @@ public class Main3 {
         System.out.println(sb.toString().trim());
     }
 
-    public static int findMaxDescendingSub(int[] buildings){
+    public static int findMaxDescendingSub(int[] buildings) {
         int count = 0;
-        if(buildings.length > 0) {
+        if (buildings.length > 0) {
             int current = buildings[0];
             count++;
-            for(int i = 1; i < buildings.length; i++){
+            for (int i = 1; i < buildings.length; i++) {
                 int pre = buildings[i];
-                if(pre > current){
+                if (pre > current) {
                     count++;
                     current = pre;
                 }
