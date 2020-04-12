@@ -2,17 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac21.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac22.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac23.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac25.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/prac25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/prac25_ReconnectNodes1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/prac25_clone3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Main2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/Main3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interview/main2_折木棍.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Interview/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/practice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/byteDance" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -54,6 +51,7 @@
       <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\IdeaProjects\sword_to_offer\src\byteDance" />
       <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
     </key>
   </component>
@@ -69,23 +67,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main2">
-    <configuration name="Link" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Link" />
+  <component name="RunManager" selected="Application.Main3">
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main2" />
       <module name="sword_to_offer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main2" />
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Interview.Main3" />
       <module name="sword_to_offer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Interview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main3" />
         <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Prac25" />
         <item itemvalue="Application.Prac24" />
         <item itemvalue="Application.Test" />
-        <item itemvalue="Application.Link" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +151,7 @@
       <workItem from="1586476595103" duration="16888000" />
       <workItem from="1586560907115" duration="18231000" />
       <workItem from="1586595563013" duration="17181000" />
-      <workItem from="1586650158967" duration="29962000" />
+      <workItem from="1586650158967" duration="40314000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
