@@ -15,8 +15,8 @@ public class Prac3 {
      * 思路
      * 递归
      */
+    ArrayList<Integer> arrayList=new ArrayList<Integer>();
     public ArrayList<Integer> printListFromTailToHead1(ListNode listNode) {
-        ArrayList<Integer> arrayList=new ArrayList<Integer>();
         if(listNode!=null){
             this.printListFromTailToHead1(listNode.next);
             arrayList.add(listNode.val);

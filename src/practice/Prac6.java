@@ -27,7 +27,7 @@ public class Prac6 {
             // 子数组是非递减的数组，10111
             if (rotateArray[low] < rotateArray[high])
                 return rotateArray[low];
-            mid = low + (high - low) / 2;
+            mid = (low + high) / 2; // 也可以写成 mid = low + (high - low) / 2;
             if(rotateArray[mid] > rotateArray[low])
                 low = mid + 1;
             else if(rotateArray[mid] < rotateArray[high])
@@ -35,5 +35,45 @@ public class Prac6 {
             else low++;
         }
         return rotateArray[low];
+    }
+
+    public int minNumberInRotateArray1(int[] rotateArray) {
+        if(rotateArray.length == 0)
+            return 0;
+
+        int start = 0;
+        int end = rotateArray.length - 1;
+        int mid = 0;
+        // 假如是顺序数组，不会进入while循环，直接结束。
+        while(rotateArray[start] >= rotateArray[end]){
+            // end是第二个递增子数组里面的索引，start是第一个递增子数组里面的索引。
+            if(end - start == 1){
+                mid = end;
+                break;
+            }
+            mid = (start + end) / 2;
+            // 如果遇到特殊情况(例如[1,0,1,1,1])，则采取顺序查找。
+            if(rotateArray[start] == rotateArray[mid] && rotateArray[mid] == rotateArray[end]){
+                return findMinInOrder(rotateArray, start, end);
+            } else if(rotateArray[mid] >= rotateArray[start]){
+                start = mid; // start最终会到达第一递增子数组的最后一个元素上。
+            } else if (rotateArray[mid] <= rotateArray[end]){
+                end = mid; // end最终会到达第二递增小组的第一个元素上，即最小元素。
+            }
+        }
+        return rotateArray[mid];
+    }
+
+    /**
+     * 顺序查找数组种的最小数
+     */
+    public static int findMinInOrder(int[] array, int start, int end){
+        int result = 0;
+        for(int i = start; i <= end; i++){
+            if(result > array[i]){
+                result = array[i];
+            }
+        }
+        return result;
     }
 }

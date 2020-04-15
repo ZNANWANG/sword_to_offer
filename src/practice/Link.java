@@ -12,10 +12,10 @@ public class Link {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        do{
+        do {
             System.out.println("输入长度 (输入0退出程序）：");
             int len = sc.nextInt();
-            if(len == 0){
+            if (len == 0) {
                 return;
             } else {
                 System.out.println("打印数组：");
