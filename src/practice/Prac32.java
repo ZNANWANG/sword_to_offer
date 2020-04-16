@@ -8,6 +8,9 @@ public class Prac32 {
         TreeSet<String> permutations = new TreeSet<>();
         permutation(numbers, permutations, 0);
         System.out.println(permutations);
+        String[] strs = new String[]{"31", "3"};
+        Arrays.sort(strs);
+        System.out.println(Arrays.toString(strs));
     }
 
     /**
@@ -17,6 +20,7 @@ public class Prac32 {
      * 注意拼接后的数字有可能是大数，所以采用字符串存储，排序之后输出最小值。
      */
     public static String PrintMinNumber(int[] numbers) {
+        if(numbers == null || numbers.length == 0) return "";
         TreeSet<String> permutations = new TreeSet<>();
         permutation(numbers, permutations, 0);
         if (!permutations.isEmpty()) {
@@ -60,10 +64,17 @@ public class Prac32 {
     /**
      * 思路：
      * 自定义比较规则，证明见剑指Offer。
+     * 排序规则如下：
+     * 若ab > ba 则 a > b，
+     * 若ab < ba 则 a < b，
+     * 若ab = ba 则 a = b；
+     * 解释说明：
+     * 比如 "3" < "31"但是 "331" > "313"，所以要将二者拼接起来进行比较
      */
     public String PrintMinNumber1(int[] numbers) {
+        if(numbers == null || numbers.length == 0) return "";
         String result = "";
-        ArrayList<Integer> list = new ArrayList<Integer>();
+        ArrayList<Integer> list = new ArrayList<>();
 
         for (int a : numbers) {
             list.add(a);//将数组放入arrayList中
@@ -84,5 +95,27 @@ public class Prac32 {
             result += j;
         }
         return result;
+    }
+
+    public String PrintMinNumber2(int [] numbers) {
+        if(numbers == null || numbers.length == 0) return "";
+        int len = numbers.length;
+        String[] str = new String[len];
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < len; i++){
+            str[i] = String.valueOf(numbers[i]);
+        }
+        Arrays.sort(str,new Comparator<String>(){
+            @Override
+            public int compare(String s1, String s2) {
+                String c1 = s1 + s2;
+                String c2 = s2 + s1;
+                return c1.compareTo(c2);
+            }
+        });
+        for(int i = 0; i < len; i++){
+            sb.append(str[i]);
+        }
+        return sb.toString();
     }
 }

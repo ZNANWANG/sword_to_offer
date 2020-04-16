@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interview/Main7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interview/Main8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac31.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac32.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac30.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview/Main5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Main5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice/Prac32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac32.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +168,7 @@
       <workItem from="1586595563013" duration="17181000" />
       <workItem from="1586650158967" duration="40382000" />
       <workItem from="1586710610727" duration="65193000" />
-      <workItem from="1586954084825" duration="41281000" />
+      <workItem from="1586954084825" duration="41666000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
