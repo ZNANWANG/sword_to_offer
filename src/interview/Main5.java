@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * 输出旋转数组
+ * 完美世界笔试题 —— 输出旋转数组
  * <p>
  * 例如：3x3数组输出如下：
  * 1 2 3

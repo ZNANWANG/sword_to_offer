@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac29.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac30.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interview/Main7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interview/Main8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac31.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac32.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac28.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac28.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac28.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac30.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interview/Main5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Main5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test3.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,13 +84,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Prac30">
-    <configuration name="Prac28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac28" />
+  <component name="RunManager" selected="Application.Prac32">
+    <configuration name="Main7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.Main7" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.*" />
+          <option name="PATTERN" value="interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac29" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac29" />
+    <configuration name="Main8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.Main8" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.*" />
+          <option name="PATTERN" value="interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test2" />
+    <configuration name="Prac31" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac31" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test3" />
+    <configuration name="Prac32" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac32" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -151,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Prac32" />
+        <item itemvalue="Application.Main8" />
+        <item itemvalue="Application.Main7" />
+        <item itemvalue="Application.Prac31" />
         <item itemvalue="Application.Prac30" />
-        <item itemvalue="Application.Prac29" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Prac28" />
-        <item itemvalue="Application.Test3" />
       </list>
     </recent_temporary>
   </component>
@@ -175,7 +176,7 @@
       <workItem from="1586595563013" duration="17181000" />
       <workItem from="1586650158967" duration="40382000" />
       <workItem from="1586710610727" duration="65193000" />
-      <workItem from="1586954084825" duration="23810000" />
+      <workItem from="1586954084825" duration="41281000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
