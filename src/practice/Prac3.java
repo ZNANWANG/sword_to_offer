@@ -13,7 +13,7 @@ public class Prac3 {
 
     /**
      * 思路
-     * 递归
+     * 递归自底向上
      */
     ArrayList<Integer> arrayList=new ArrayList<Integer>();
     public ArrayList<Integer> printListFromTailToHead1(ListNode listNode) {

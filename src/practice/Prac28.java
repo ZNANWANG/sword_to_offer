@@ -2,6 +2,13 @@ package practice;
 
 import java.util.*;
 
+/**
+ * 数组中出现次数超过一半的数字
+ *
+ * 题目描述
+ * 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。例如输入一个长度为9的数组{1,2,3,2,2,2,5,4,2}。由于数字2在数组中出
+ * 现了5次，超过数组长度的一半，因此输出2。如果不存在则输出0。
+ */
 public class Prac28 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -198,7 +205,7 @@ public class Prac28 {
     }
 
     /**
-     * 只需一次partition就可以完成，但是partition方法有问题，正确写法参见Test2 - quickSort2
+     * 不推荐下面写法，虽然只需一次partition就可以完成，但是partition方法有问题，正确写法参见Test2 - quickSort2
      */
     public static int MoreThanHalfNum_Solution6(int [] array) {
         if(array.length > 0 && array != null){
