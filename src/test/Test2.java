@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- *
+ * 排序算法练习集锦
  */
 public class Test2 {
     public static void main(String[] args) {
@@ -21,11 +21,12 @@ public class Test2 {
 //        array = mergeSort(array);
 //        heapSort(array);
 //        shellSort(array);
-        array = new int[]{2,2,2,2,2,1,3,4,5};
-//        array = new int[]{1,3,4,5,2,2,2,2,2};
-        array = new int[]{1,2,3,2,2,2,5,4,2};
+//        array = new int[]{2, 2, 2, 2, 2, 1, 3, 4, 5};
+//        array = new int[]{1, 3, 4, 5, 2, 2, 2, 2, 2};
+//        array = new int[]{1, 2, 3, 2, 2, 2, 5, 4, 2};
 //        array = new int[]{49, 38, 65, 97, 76, 13, 27, 49};
-        quickSort2(array, 0, array.length - 1);
+//        quickSort2(array, 0, array.length - 1);
+        mergeSort(array, 0, array.length - 1);
         System.out.println("sorted array: " + Arrays.toString(array));
     }
 
@@ -105,7 +106,9 @@ public class Test2 {
         }
     }
 
-    // Stable
+    /**
+     * 这版合并排序稳定但是空间复杂度高，每回都会复制左右两个子数组，合并的时候又会复制数组。
+     */
     public static int[] mergeSort(int[] array) {
         int length = array.length;
         if (length < 2) {
@@ -134,6 +137,43 @@ public class Test2 {
             }
         }
         return res;
+    }
+
+    /**
+     * 这版合并排序空间复杂度低且稳定。
+     */
+    public static void mergeSort(int[] array, int start, int end) {
+        if (array == null || array.length < 2) {
+            return;
+        }
+        if (start == end) {
+            return;
+        }
+        int middle = (start + end) / 2;
+        mergeSort(array, start, middle);
+        mergeSort(array, middle + 1, end);
+        merge(array, start, middle, end);
+    }
+
+    public static void merge(int[] array, int start, int middle, int end) {
+        int i = start;
+        int j = middle + 1;
+        int index = 0;
+        int[] temp = new int[end - start + 1];
+        while (index <= end - start) {
+            if (i > middle) {
+                temp[index++] = array[j++];
+            } else if (j > end) {
+                temp[index++] = array[i++];
+            } else if (array[i] > array[j]) {
+                temp[index++] = array[j++];
+            } else {
+                temp[index++] = array[i++];
+            }
+        }
+        for (int k = 0; k < temp.length; k++) {
+            array[start + k] = temp[k];
+        }
     }
 
     // Unstable
@@ -167,13 +207,13 @@ public class Test2 {
     }
 
     // Unstable
-    public static void shellSort(int[] array){
-        if(array.length > 1){
+    public static void shellSort(int[] array) {
+        if (array.length > 1) {
             int gap = array.length / 2;
-            while(gap > 0){
-                for(int i = gap; i < array.length; i++){
+            while (gap > 0) {
+                for (int i = gap; i < array.length; i++) {
                     int preIndex = i - gap;
-                    while(preIndex >= 0 && array[preIndex] > array[preIndex + gap]){
+                    while (preIndex >= 0 && array[preIndex] > array[preIndex + gap]) {
                         swap(array, preIndex, preIndex + gap);
                         preIndex--;
                     }
@@ -186,28 +226,28 @@ public class Test2 {
     /**
      * 剑指Offer上的快速排序
      */
-    public static void quickSort1(int[] array, int start, int end){
-        if(start == end){
+    public static void quickSort1(int[] array, int start, int end) {
+        if (start == end) {
             return;
         }
         int index = partition1(array, start, end);
-        if(index > start){
+        if (index > start) {
             quickSort1(array, start, index - 1);
         }
-        if(index < end){
+        if (index < end) {
             quickSort1(array, index + 1, end);
         }
     }
 
-    public static int partition1(int[] array, int start, int end){
+    public static int partition1(int[] array, int start, int end) {
         int index = Random(start, end);
         System.out.println("index: " + index);
         swap(array, index, end);
         int small = start - 1;
-        for(index = start; index < end; index++){
-            if(array[end] > array[index]){ //if(array[index] <= array[end])也可以
+        for (index = start; index < end; index++) {
+            if (array[end] > array[index]) { //if(array[index] <= array[end])也可以
                 small++;
-                if(small != index){
+                if (small != index) {
                     swap(array, index, small);
                 }
             }
@@ -220,33 +260,56 @@ public class Test2 {
     }
 
     /**
-     * 这种快排有问题，不能处理有些有重复数字的数组。例如[1,3,4,5,2,2,2,2,2] -> [1,3,4,5,2,2,2,2,2]，
+     * 测试选取中间位置元素作为pivot后运用不同partition算法进行一轮partition之后的结果。
      */
-    public static void quickSort2(int[] array, int start, int end){
-        if(start == end){
+    public static void quickSort2(int[] array, int start, int end) {
+        if (start == end) {
             return;
         }
         int middle = (start + end) / 2;
-        int index = partition2(array, middle, start, end);
-        if(index > start){
+        int index = partition3(array, middle, start, end);
+        if (index > start) {
             quickSort2(array, start, index - 1);
         }
-        if(index < end){
-            quickSort2(array, index + 1,  end);
+        if (index < end) {
+            quickSort2(array, index + 1, end);
         }
     }
 
-    public static int partition2(int[] array, int index, int start, int end){
+    // 剑指Offer版partitino
+    public static int partition(int[] array, int index, int start, int end) {
+        System.out.println("index: " + index);
+        swap(array, index, end);
+        int small = start - 1;
+        for (index = start; index < end; index++) {
+            if (array[end] > array[index]) { //if(array[index] <= array[end])也可以
+                small++;
+                if (small != index) {
+                    swap(array, index, small);
+                }
+            }
+        }
+        small++;
+        swap(array, small, end);
+        System.out.println("small: " + small);
+        System.out.println(Arrays.toString(array));
+        return small;
+    }
+
+    /**
+     * 这种双指针partition有问题，例如[1,3,4,5,2,2,2,2,2] -> [1,3,4,5,2,2,2,2,2]
+     */
+    public static int partition2(int[] array, int index, int start, int end) {
         int pivot = array[index];
         swap(array, start, index);
         int i = start;
         int j = end;
 
-        while(i < j){
-            while(array[j] >= pivot && i < j){
+        while (i < j) {
+            while (array[j] >= pivot && i < j) {
                 j--;
             }
-            while(array[i] <= pivot && i < j){
+            while (array[i] <= pivot && i < j) {
                 i++;
             }
             swap(array, i, j);
@@ -259,26 +322,26 @@ public class Test2 {
     }
 
     /**
-     * 这种partition有问题，例如[1,3,4,5,2,2,2,2,2] -> [1,3,4,5,2,2,2,2,2]
+     * 这版artition和剑指Offer版本的区别在于pivot选在首位。
      */
-    public static int partition(int[] array, int index, int start, int end){
-        int i = start;
-        int j = end;
-        int pivot = array[index];
-        while(i < j){
-            while(array[j] >= pivot && i < j){
-                j--;
+    public static int partition3(int[] array, int index, int start, int end) {
+        swap(array, index, start);
+        int pivot = array[start];
+        int small = start;
+        for (index = start + 1; index <= end; index++) {
+            if (array[index] < pivot) {
+                small++;
+                if (index > small) {
+                    swap(array, index, small);
+                }
             }
-            while(array[i] <= pivot && i < j){
-                i++;
-            }
-            swap(array, i, j);
-            System.out.println("i: " + i + " j: " + j);
         }
-        swap(array, i, start);
-        System.out.println("index: " + j);
+        if (small != start) {
+            swap(array, small, start);
+        }
+        System.out.println("index: " + small);
         System.out.println("array: " + Arrays.toString(array));
-        return j;
+        return small;
     }
 
     /**
@@ -309,9 +372,9 @@ public class Test2 {
     /**
      * 生成x和y之间的随机数，包括x和y。
      */
-    public static int Random(int x, int y){
+    public static int Random(int x, int y) {
         int max = Math.max(x, y);
         int min = Math.min(x, y);
-        return (int)(Math.random() * (max - min + 1) + min);
+        return (int) (Math.random() * (max - min + 1) + min);
     }
 }

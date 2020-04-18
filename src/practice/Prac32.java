@@ -2,6 +2,13 @@ package practice;
 
 import java.util.*;
 
+/**
+ * 把数组排成最小的数
+ * <p>
+ * 题目描述
+ * 输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，则打印出这
+ * 三个数字能排成的最小数字为321323。
+ */
 public class Prac32 {
     public static void main(String[] args) {
         int[] numbers = new int[]{1, 2, 3, 4};
@@ -20,7 +27,7 @@ public class Prac32 {
      * 注意拼接后的数字有可能是大数，所以采用字符串存储，排序之后输出最小值。
      */
     public static String PrintMinNumber(int[] numbers) {
-        if(numbers == null || numbers.length == 0) return "";
+        if (numbers == null || numbers.length == 0) return "";
         TreeSet<String> permutations = new TreeSet<>();
         permutation(numbers, permutations, 0);
         if (!permutations.isEmpty()) {
@@ -72,7 +79,7 @@ public class Prac32 {
      * 比如 "3" < "31"但是 "331" > "313"，所以要将二者拼接起来进行比较
      */
     public String PrintMinNumber1(int[] numbers) {
-        if(numbers == null || numbers.length == 0) return "";
+        if (numbers == null || numbers.length == 0) return "";
         String result = "";
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -97,15 +104,15 @@ public class Prac32 {
         return result;
     }
 
-    public String PrintMinNumber2(int [] numbers) {
-        if(numbers == null || numbers.length == 0) return "";
+    public String PrintMinNumber2(int[] numbers) {
+        if (numbers == null || numbers.length == 0) return "";
         int len = numbers.length;
         String[] str = new String[len];
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < len; i++){
+        for (int i = 0; i < len; i++) {
             str[i] = String.valueOf(numbers[i]);
         }
-        Arrays.sort(str,new Comparator<String>(){
+        Arrays.sort(str, new Comparator<String>() {
             @Override
             public int compare(String s1, String s2) {
                 String c1 = s1 + s2;
@@ -113,7 +120,7 @@ public class Prac32 {
                 return c1.compareTo(c2);
             }
         });
-        for(int i = 0; i < len; i++){
+        for (int i = 0; i < len; i++) {
             sb.append(str[i]);
         }
         return sb.toString();

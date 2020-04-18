@@ -2,7 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/interview/Deadlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac33.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac34.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac35.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac36.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac37.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac38.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac39.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac40.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/LazyThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Test3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac32$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac32$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac32$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac32$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test$Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice/Prac28.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac28.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/practice/Prac32.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac32.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test2.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,35 +98,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Prac32">
-    <configuration name="Main7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interview.Main7" />
-      <module name="sword_to_offer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interview.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="interview.Main8" />
-      <module name="sword_to_offer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="interview.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Prac30" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac30" />
+  <component name="RunManager" selected="Application.Prac39">
+    <configuration name="Prac35" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac35" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +112,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac31" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac31" />
+    <configuration name="Prac37" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac37" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -129,12 +125,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac32" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac32" />
+    <configuration name="Prac38" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac38" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prac39" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac39" />
+      <module name="sword_to_offer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test2" />
+      <module name="sword_to_offer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Prac32" />
-        <item itemvalue="Application.Main8" />
-        <item itemvalue="Application.Main7" />
-        <item itemvalue="Application.Prac31" />
-        <item itemvalue="Application.Prac30" />
+        <item itemvalue="Application.Prac39" />
+        <item itemvalue="Application.Prac38" />
+        <item itemvalue="Application.Prac37" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Prac35" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +190,7 @@
       <workItem from="1586595563013" duration="17181000" />
       <workItem from="1586650158967" duration="40382000" />
       <workItem from="1586710610727" duration="65193000" />
-      <workItem from="1586954084825" duration="41666000" />
+      <workItem from="1586954084825" duration="99889000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>

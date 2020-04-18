@@ -149,7 +149,7 @@ public class Prac28 {
                     if(!clone[i].equals(clone[j]) && clone[j] != null){
                         clone[i] = null;
                         clone[j] = null;
-                        break;
+                        break; // 每轮拼掉两个士兵
                     }
                 }
             }
@@ -205,7 +205,7 @@ public class Prac28 {
     }
 
     /**
-     * 不推荐下面写法，虽然只需一次partition就可以完成，但是partition方法有问题，正确写法参见Test2 - quickSort2
+     * 不推荐下面写法，虽然只需一次partition就可以完成，但是partition方法有问题，各种partition写法参见Test2 - quickSort2
      */
     public static int MoreThanHalfNum_Solution6(int [] array) {
         if(array.length > 0 && array != null){
