@@ -14,14 +14,14 @@ public class Test4 {
     }
 
     // 编译没问题但是运行有问题
-    public static void test(){
+    public static void test() {
         String[] strs = new String[2];
         Object[] objs = strs;
         strs[0] = "hi";
         objs[1] = Integer.valueOf(42);
     }
 
-    public static void test1(){
+    public static void test1() {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
@@ -31,7 +31,7 @@ public class Test4 {
         list.add(6);
 
         // 会报错：java.util.ConcurrentModificationException
-        for(Integer a : list){
+        for (Integer a : list) {
             list.remove(a);
         }
 
@@ -44,7 +44,7 @@ public class Test4 {
         System.out.println(list);
     }
 
-    public static void integerTest(){
+    public static void integerTest() {
         Integer i1 = 40;
         Integer i2 = 40;
         Integer i3 = 0;
@@ -58,7 +58,7 @@ public class Test4 {
         System.out.println(i4 == i5 + i6); //true
     }
 
-    public static void stringTest(){
+    public static void stringTest() {
         String s1 = "abc";
         String s2 = new String("abc");
         String s3 = "ab";

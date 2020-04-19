@@ -60,9 +60,9 @@ public class Permutation {
         }
     }
 
-    public static String toString(int[] array){
+    public static String toString(int[] array) {
         StringBuffer sb = new StringBuffer();
-        for(int a : array){
+        for (int a : array) {
             sb.append(a);
         }
         return sb.toString();

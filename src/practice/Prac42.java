@@ -13,14 +13,15 @@ import java.util.*;
  * 输出所有和为S的连续正数序列。序列内按照从小至大的顺序，序列间按照开始数字从小到大的顺序
  */
 public class Prac42 {
-    public static void main(String[] args){
-        Scanner sc=  new Scanner(System.in);
-        while (sc.hasNext()){
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNext()) {
             int sum = sc.nextInt();
             System.out.println(FindContinuousSequence3(sum));
         }
         sc.close();
     }
+
     /**
      * 思路：
      * 滑动窗口方法，假如当前窗口（即list)所有的值等于sum，判断窗口的长度是否大于一，如果大于一，添加这一窗口序列到result中，如果不

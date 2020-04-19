@@ -5,7 +5,7 @@ import java.util.Stack;
 
 /**
  * 从头到尾打印链表
- *
+ * <p>
  * 题目描述
  * 输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
  */
@@ -15,9 +15,10 @@ public class Prac3 {
      * 思路
      * 递归自底向上
      */
-    ArrayList<Integer> arrayList=new ArrayList<Integer>();
+    ArrayList<Integer> arrayList = new ArrayList<Integer>();
+
     public ArrayList<Integer> printListFromTailToHead1(ListNode listNode) {
-        if(listNode!=null){
+        if (listNode != null) {
             this.printListFromTailToHead1(listNode.next);
             arrayList.add(listNode.val);
         }
@@ -43,10 +44,11 @@ public class Prac3 {
     }
 }
 
-class ListNode{
+class ListNode {
     int val;
     ListNode next = null;
-    ListNode(int val){
+
+    ListNode(int val) {
         this.val = val;
     }
 }

@@ -13,12 +13,12 @@ import java.util.Scanner;
  * 把其循环左移K位后的序列输出。例如，字符序列S=”abcXYZdef”,要求输出循环左移3位后的结果，即“XYZdefabc”。是不是很简单？OK，搞定它！
  */
 public class Prac43 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while(sc.hasNext()){
+        while (sc.hasNext()) {
             String str = sc.next();
             int n = sc.nextInt();
-            System.out.println(LeftRotateString2(str, n));
+            System.out.println(LeftRotateString3(str, n));
         }
         sc.close();
     }
@@ -28,13 +28,13 @@ public class Prac43 {
      * 运用StringBuffer的deleteCharAt()和append()方法。
      */
     public static String LeftRotateString(String str, int n) {
-        if(str == null){
+        if (str == null) {
             return null;
-        } else if(str.length() < 2){
+        } else if (str.length() < 2) {
             return str;
         }
         StringBuffer sb = new StringBuffer(str);
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             char c = sb.charAt(0);
             sb.deleteCharAt(0);
             sb.append(c);
@@ -47,21 +47,21 @@ public class Prac43 {
      * 运用Queue先入先出（FIFO）的特性
      */
     public static String LeftRotateString1(String str, int n) {
-        if(str == null){
+        if (str == null) {
             return null;
-        } else if(str.length() < 2){
+        } else if (str.length() < 2) {
             return str;
         }
         Queue<Character> queue = new LinkedList<>();
-        for(int i = 0; i < str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             queue.offer(str.charAt(i));
         }
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             char c = queue.poll();
             queue.offer(c);
         }
         StringBuffer sb = new StringBuffer();
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             sb.append(queue.poll());
         }
         return sb.toString();
@@ -72,19 +72,48 @@ public class Prac43 {
      * 记录要截取的位置，然后拼接左右字符串即可。
      */
     public static String LeftRotateString2(String str, int n) {
-        if(str == null){
+        if (str == null) {
             return null;
-        } else if(str.length() < 2){
+        } else if (str.length() < 2) {
             return str;
         }
         int length = str.length();
         int start = 0;
-        for(int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++) {
             start++;
             start %= length;
         }
         String right = str.substring(start, length);
         String left = str.substring(0, start);
         return right + left;
+    }
+
+    public static String LeftRotateString3(String str, int n) {
+        if (str == null) {
+            return null;
+        } else if (str.length() < 2) {
+            return str;
+        }
+        int start = 0;
+        for (int i = 0; i < n; i++) {
+            start++;
+            start %= str.length();
+        }
+        str = reverse(str, start, str.length() - 1);
+        str = reverse(str, 0, start - 1);
+        str = reverse(str, 0, str.length() - 1);
+        return str;
+    }
+
+    public static String reverse(String str, int start, int end) {
+        StringBuffer sb = new StringBuffer(str);
+        while (start < end) {
+            char temp = sb.charAt(start);
+            sb.setCharAt(start, sb.charAt(end));
+            sb.setCharAt(end, temp);
+            start++;
+            end--;
+        }
+        return sb.toString();
     }
 }

@@ -2,6 +2,7 @@ package interview;
 /*
  * 排序算法集锦
  */
+
 import java.util.*;
 
 public class Sort {
@@ -163,6 +164,7 @@ public class Sort {
 
     /**
      * 创建堆
+     *
      * @param arr 待排序列
      */
     public static void heapSort(int[] arr) {
@@ -175,7 +177,7 @@ public class Sort {
         //调整堆结构+交换堆顶元素与末尾元素
         for (int i = arr.length - 1; i > 0; i--) {
             //将堆顶元素与末尾元素进行交换
-            swap(arr, 0 ,i);
+            swap(arr, 0, i);
 
             //重新对堆进行调整
             adjustHeap(arr, 0, i);
@@ -186,7 +188,8 @@ public class Sort {
 
     /**
      * 调整堆
-     * @param arr 待排序列
+     *
+     * @param arr    待排序列
      * @param parent 父节点
      * @param length 待排序列尾元素索引
      */

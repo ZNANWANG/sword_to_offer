@@ -2,7 +2,7 @@ package practice;
 
 /**
  * 二进制中1的个数
- *
+ * <p>
  * 题目描述
  * 输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
  */
@@ -14,9 +14,9 @@ public class Prac11 {
     public int NumberOf1(int n) {
         String str = Integer.toBinaryString(n);
         int count = 0;
-        for(int i = 0; i < str.length(); i++){
+        for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            if(c == '1'){
+            if (c == '1') {
                 count++;
             }
         }
@@ -34,8 +34,8 @@ public class Prac11 {
         int count = 0;
         int flag = 1;
         int loop = 32;
-        while(loop > 0){
-            if((n & flag) == flag){
+        while (loop > 0) {
+            if ((n & flag) == flag) {
                 count++;
             }
             flag = flag << 1;
@@ -51,9 +51,9 @@ public class Prac11 {
      */
     public int NumberOf13(int n) {
         int count = 0;
-        while(n != 0){
+        while (n != 0) {
             count++;
-            n = n & (n -1);
+            n = n & (n - 1);
         }
         return count;
     }

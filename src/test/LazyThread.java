@@ -5,12 +5,12 @@ import java.util.concurrent.TimeUnit;
 /**
  * 测试interrupt()方法的效果
  */
-public class LazyThread extends Thread{
+public class LazyThread extends Thread {
     // 是否被打扰
     public void run() {
 
         // 没有被打扰就继续吃
-        while(!Thread.currentThread().isInterrupted()) {
+        while (!Thread.currentThread().isInterrupted()) {
             System.out.println("eat...");
 
             // 这个线程真的很懒，不断的吃和睡

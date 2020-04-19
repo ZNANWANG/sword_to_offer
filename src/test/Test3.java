@@ -24,7 +24,7 @@ public class Test3 {
         int middle = (start + end) >> 1;
         int left = mergeSort(array, start, middle) % 1000000007;
         int right = mergeSort(array, middle + 1, end) % 1000000007;
-        return (left + right + merge(array, start, middle , end)) % 1000000007;
+        return (left + right + merge(array, start, middle, end)) % 1000000007;
     }
 
     public static int merge(int[] array, int start, int middle, int end) {

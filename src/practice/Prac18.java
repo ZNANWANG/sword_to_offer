@@ -42,18 +42,18 @@ public class Prac18 {
      * 非递归版本BFS(Queue)
      */
     public void Mirror1(TreeNode root) {
-        if(root != null){
+        if (root != null) {
             Queue<TreeNode> queue = new LinkedList<>();
             queue.offer(root);
-            while(!queue.isEmpty()){
+            while (!queue.isEmpty()) {
                 TreeNode cur = queue.poll();
                 TreeNode temp = cur.left;
                 cur.left = cur.right;
                 cur.right = temp;
-                if(cur.left != null){
+                if (cur.left != null) {
                     queue.offer(cur.left);
                 }
-                if(cur.right != null){
+                if (cur.right != null) {
                     queue.offer(cur.right);
                 }
             }
@@ -64,18 +64,18 @@ public class Prac18 {
      * 非递归版DFS（Stack)
      */
     public void Mirror2(TreeNode root) {
-        if(root != null){
+        if (root != null) {
             Stack<TreeNode> stack = new Stack<>();
             stack.push(root);
-            while(!stack.isEmpty()){
+            while (!stack.isEmpty()) {
                 TreeNode cur = stack.pop();
                 TreeNode temp = cur.left;
                 cur.left = cur.right;
                 cur.right = temp;
-                if(cur.left != null){
+                if (cur.left != null) {
                     stack.push(cur.left);
                 }
-                if(cur.right != null){
+                if (cur.right != null) {
                     stack.push(cur.right);
                 }
             }
