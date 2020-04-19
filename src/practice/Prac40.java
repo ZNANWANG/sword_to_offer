@@ -45,19 +45,18 @@ public class Prac40 {
      */
     public void FindNumsAppearOnce1(int[] array, int[] num1, int num2[]) {
         Arrays.sort(array);
-        Stack<Integer> sta = new Stack<Integer>();
-
+        Stack<Integer> stack = new Stack<Integer>();
 
         for (int i = 0; i < array.length; i++) {
-            if (sta.empty() || sta.peek() != array[i]) {
-                sta.push(array[i]);
-            } else if (sta.peek() == array[i]) {
-                sta.pop();
+            if (stack.empty() || stack.peek() != array[i]) {
+                stack.push(array[i]);
+            } else if (stack.peek() == array[i]) {
+                stack.pop();
             }
         }
 
-        num1[0] = sta.pop();
-        num2[0] = sta.pop();
+        num1[0] = stack.pop();
+        num2[0] = stack.pop();
     }
 
     /**
