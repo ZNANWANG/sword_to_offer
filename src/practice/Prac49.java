@@ -176,7 +176,8 @@ public class Prac49 {
     }
 
     /**
-     * 剑指Offer版解法，设置全局变量标志字符串是否合法。
+     * 剑指Offer版解法，设置全局变量来标志字符串是否合法，用long叠加结果，最后结果乘以isNegative并且和Integer.MAX_VALUE以及
+     * Integer.MIN_VALUE比对判断是否越界。
      */
     static boolean isInvalidNumber = false;
 
@@ -237,7 +238,6 @@ public class Prac49 {
             isNegative = -1;
             index++;
         } else if (!Character.isDigit(str.charAt(index))) {
-            System.out.println("1");
             isInvalidNumber = true;
             return 0;
         }
@@ -245,6 +245,7 @@ public class Prac49 {
         return result;
     }
 
+    // 正负数分别判断是否越界
     public static int StrToIntCore1(String str, int index, int isNegative) {
         int result = 0;
         while (index < str.length()) {
@@ -266,6 +267,7 @@ public class Prac49 {
         return isNegative * result;
     }
 
+    // 正负数合并判断是否越界
     public static int StrToIntCore2(String str, int index, int isNegative) {
         int result = 0;
         int overNumber = 0;

@@ -2,45 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac45.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac46.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac47.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac48.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac49.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac50.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac51.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac52.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac53.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac54.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac55.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac56.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/Prac57.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/practice/prac51.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac43.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac43.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac44.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac44.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview/Main4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Main4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview/Main8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Main8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Permutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interview/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Sort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac10.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac11.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac19.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac23.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac23.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac25.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac25.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac28.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac28.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac29.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac29.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac30.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac30.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac34.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac40.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac40.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac42.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac42.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac43.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac43.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac44.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac44.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/practice/Prac9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/LazyThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/LazyThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/Interview/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/Interview/Sort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/ListNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac42.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac42.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac49.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac49.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac50.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac50.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice/Prac49.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac49.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/practice/Prac50.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/practice/Prac50.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test6.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,9 +99,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Prac49">
-    <configuration name="Prac42" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac42" />
+  <component name="RunManager" selected="Application.Prac54">
+    <configuration name="Prac52" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac52" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac43" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac43" />
+    <configuration name="Prac53" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac53" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -144,21 +126,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Prac44" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac44" />
-      <module name="sword_to_offer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Prac49" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac49" />
+    <configuration name="Prac54" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Prac54" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
@@ -183,13 +152,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test6" />
+      <module name="sword_to_offer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Prac49" />
-        <item itemvalue="Application.Prac43" />
-        <item itemvalue="Application.Prac44" />
+        <item itemvalue="Application.Prac54" />
         <item itemvalue="Application.Test5" />
-        <item itemvalue="Application.Prac42" />
+        <item itemvalue="Application.Test6" />
+        <item itemvalue="Application.Prac53" />
+        <item itemvalue="Application.Prac52" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +192,7 @@
       <workItem from="1586650158967" duration="40382000" />
       <workItem from="1586710610727" duration="65193000" />
       <workItem from="1586954084825" duration="100026000" />
-      <workItem from="1587254626191" duration="42546000" />
+      <workItem from="1587254626191" duration="80903000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
