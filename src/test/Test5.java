@@ -9,6 +9,15 @@ public class Test5 {
         testWhitespace();
         testListDelete();
         testLinkedHashMap();
+        testSplit();
+    }
+
+    public static void testSplit(){
+        String str = "1,2,3,";
+        String[] strs = str.split(",");
+        System.out.println(Arrays.toString(strs));
+        str = "1";
+        System.out.println(Arrays.toString(str.split(",")));
     }
 
     public static void testLinkedHashMap(){
