@@ -1,7 +1,6 @@
 package test;
 
-import java.util.Arrays;
-import java.util.Random;
+import java.util.*;
 
 /**
  * 排序算法练习集锦
@@ -25,8 +24,14 @@ public class Test2 {
 //        array = new int[]{1, 3, 4, 5, 2, 2, 2, 2, 2};
 //        array = new int[]{1, 2, 3, 2, 2, 2, 5, 4, 2};
 //        array = new int[]{49, 38, 65, 97, 76, 13, 27, 49};
+//        array = new int[]{-1, -3, -9, -4, 0, 6, 2, 8, 6, 4};
 //        quickSort2(array, 0, array.length - 1);
-        mergeSort(array, 0, array.length - 1);
+//        mergeSort(array, 0, array.length - 1);
+//        quickSort4(array);
+//        comparisonCountingSort(array);
+//        distributionCountingSort(array);
+//        bucketSort(array);
+        radixSort(array);
         System.out.println("sorted array: " + Arrays.toString(array));
     }
 
@@ -366,6 +371,240 @@ public class Test2 {
             System.out.println("array: " + Arrays.toString(array));
             quickSort3(array, start, j - 1);
             quickSort3(array, j + 1, end);
+        }
+    }
+
+    /**
+     * 受广发银行笔试题目启发，测试一下另一个版本的快排。
+     */
+    public static  void quickSort4(int[] array){
+        if(array == null || array.length < 2){
+            return;
+        }
+        quickSortHelper(array, 0, array.length - 1);
+    }
+
+    public static void quickSortHelper(int[] array, int start, int end){
+        if(start < 0 || end >= array.length || start > end){
+            return;
+        }
+
+        int i = start;
+        int j = end;
+        int pivot = array[start];
+        while(i < j){
+            while (i < j && array[j] > pivot){
+                j--;
+            }
+            if(i < j){
+                array[i] = array[j];
+            }
+            while(i < j && array[i] < pivot){
+                i++;
+            }
+            if(i < j){
+                array[j--] = array[i];
+            }
+            System.out.println(Arrays.toString(array));
+        }
+        array[i] = pivot;
+        quickSortHelper(array, start, i - 1);
+        quickSortHelper(array, i + 1, end);
+    }
+
+    /**
+     * 比较计数排序 —— 稳定但不在位
+     * 能解决含重复数的数组，思想很精妙，自底向上。
+     */
+    public static void comparisonCountingSort(int[] array){
+        if(array == null || array.length < 2){
+            return;
+        }
+        int[] counts = new int[array.length];
+        for(int i = 0; i < array.length - 1; i++){
+            int count = 0;
+            for(int j = i + 1; j < array.length; j++){
+                if(array[j] < array[i]){
+                    counts[i]++;
+                } else {
+                    counts[j]++;
+                }
+            }
+        }
+        int[] copy = Arrays.copyOf(array, array.length);
+        System.out.println("counts: " + Arrays.toString(counts));
+        for(int i = 0; i < counts.length; i++){
+            int count = counts[i];
+            array[count] = copy[i];
+        }
+    }
+
+    /**
+     * 统计计数排序 —— 稳定但不在位
+     */
+    public static void distributionCountingSort(int[] array){
+        if(array == null || array.length < 2){
+            return;
+        }
+        // 首先寻找数组最大值
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int a : array){
+            max = max > a ? max : a;
+            min = min < a ? min : a;
+        }
+        // 初始化一个最大值 - 最小值 + 1长度的数组用于存放计数
+        int[] counts = new int[max - min + 1];
+        for(int i = 0; i < array.length; i++){
+            counts[array[i] - min]++;
+        }
+        // 计数数组累加，使每个数找到相应的位置
+        for(int i = 1; i < counts.length; i++){
+            counts[i] += counts[i - 1];
+        }
+        System.out.println("counts: " + Arrays.toString(counts));
+
+        // 复制一个参照数组，从后往前遍历是为了保持排序稳定性，针对重复数字，每放入一个数字，相应计数减一
+        int[] copy = Arrays.copyOf(array, array.length);
+        for(int i = copy.length - 1; i >= 0; i--){
+            int current = copy[i];
+            int index = counts[current - min];
+            counts[current- min]--;
+            array[index - 1] = current;
+        }
+    }
+
+    /**
+     * 桶排序 —— 稳定但不在位
+     */
+    public static void bucketSort(int[] array){
+        if(array == null || array.length < 2){
+            return;
+        }
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+        for(int a : array){
+            max = max > a ? max : a;
+            min = min < a ? min : a;
+        }
+
+        // 初始化桶的集合，因为桶内元素会频繁地插入，所以选择 LinkedList 作为桶的数据结构。
+        ArrayList<LinkedList<Integer>>  bucketList = new ArrayList<>();
+        for(int i  = 0; i < array.length; i++){
+            bucketList.add(new LinkedList<>());
+        }
+
+        // 向桶内添加数字，并插入排序
+        for(int i = 0; i < array.length; i++){
+            int num = getBucketNum(array, i, min);
+            bucketList.get(num).add(array[i]);
+            insertionSort(bucketList.get(num));
+        }
+
+        // 将桶内数字填入到原数组中
+        int index = 0;
+        for(int i = 0; i < bucketList.size(); i++){
+            for(int j = 0;j < bucketList.get(i).size(); j++){
+                array[index++] = bucketList.get(i).get(j);
+            }
+        }
+    }
+
+    /**
+     * 基数排序（List) —— 稳定但不在位
+     */
+    public static void radixSort(int[] array){
+        if(array == null || array.length < 2){
+            return;
+        }
+        int max = Integer.MIN_VALUE;
+        for(int a : array){
+            max = max > a ? max : a;
+        }
+        int radix = 1;
+        // 初始化桶的集合
+        ArrayList<LinkedList<Integer>> buckets = new ArrayList<LinkedList<Integer>>();
+        for(int i = 0; i < 10; i++){
+            buckets.add(new LinkedList<>());
+        }
+        while(radix <= max){
+            // 将数字根据基数放入桶中
+            for(int i = 0; i < array.length; i++){
+                int num = (array[i] / radix) % 10;
+                buckets.get(num).add(array[i]);
+            }
+            // 将本轮基数排序的结果放入数组中，以便下轮使用，这一步是计数排序的精髓。
+            int index = 0;
+            for(int i = 0; i < buckets.size(); i++){
+                for(int j = 0; j < buckets.get(i).size(); j++){
+                    array[index++] = buckets.get(i).get(j);
+                }
+            }
+            // 清空桶，为下一轮做准备。
+            for(int i = 0; i < 10; i++){
+                buckets.get(i).clear();
+            }
+            // 基数前移
+            radix *= 10;
+        }
+    }
+
+    /**
+     * 基数排序（int[][]) —— 稳定但不在位
+     */
+    public static void radixSort1(int[] array){
+        if(array == null || array.length < 2){
+            return;
+        }
+        int max = 0;
+        for(int a : array){
+            max = max > a ? max : a;
+        }
+        int radix = 1;
+        // 不放入循环内初始化桶数组和计数数组是为了降低空间复杂度
+        int[][] buckets = new int[10][array.length];
+        int[] counts = new int[10];
+        while (radix <= max){
+            // 将数字根据基数放入桶内
+            for(int i = 0; i < array.length; i++){
+                int num = (array[i] / radix) % 10;
+                buckets[num][counts[num]++] = array[i];
+            }
+            System.out.println(Arrays.toString(counts));
+            // 将本轮基数排序的结果放入数组中，以便下轮使用，这一步是计数排序的精髓。
+            int index = 0;
+            for(int i = 0; i < buckets.length; i++){
+                for(int j = 0; j < counts[i]; j++){
+                    array[index++] = buckets[i][j];
+                }
+                // 清空计数数组各单元，以便下轮使用。
+                counts[i] = 0;
+            }
+            System.out.println(Arrays.toString(array));
+            // 基数前移
+            radix *= 10;
+        }
+    }
+
+    /**
+     * 计算得到输入元素应该放到哪个桶内，实际开发中需要根据场景具体设计。
+     */
+    public static int getBucketNum(int[] array, int i, int min){
+        return (array[i] - min) / array.length;
+    }
+
+    /**
+     * 对每个桶进行排序
+     */
+    public static void insertionSort(LinkedList<Integer> list){
+        for(int i = 1; i < list.size(); i++){
+            int temp = list.get(i);
+            int preIndex = i - 1;
+            while(preIndex >= 0 && list.get(preIndex) > temp){
+                list.set(preIndex + 1, list.get(preIndex));
+                preIndex--;
+            }
+            list.set(preIndex + 1, temp);
         }
     }
 
