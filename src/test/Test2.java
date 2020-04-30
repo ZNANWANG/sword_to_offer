@@ -21,11 +21,11 @@ public class Test2 {
 //        heapSort(array);
 //        shellSort(array);
 //        array = new int[]{2, 2, 2, 2, 2, 1, 3, 4, 5};
-//        array = new int[]{1, 3, 4, 5, 2, 2, 2, 2, 2};
+        array = new int[]{1, 3, 4, 5, 2, 2, 2, 2, 2};
 //        array = new int[]{1, 2, 3, 2, 2, 2, 5, 4, 2};
 //        array = new int[]{49, 38, 65, 97, 76, 13, 27, 49};
 //        array = new int[]{-1, -3, -9, -4, 0, 6, 2, 8, 6, 4};
-//        quickSort2(array, 0, array.length - 1);
+        quickSort2(array, 0, array.length - 1);
 //        mergeSort(array, 0, array.length - 1);
 //        quickSort4(array);
 //        comparisonCountingSort(array);
@@ -245,7 +245,7 @@ public class Test2 {
     }
 
     public static int partition1(int[] array, int start, int end) {
-        int index = Random(start, end);
+        int index = random(start, end);
         System.out.println("index: " + index);
         swap(array, index, end);
         int small = start - 1;
@@ -272,7 +272,7 @@ public class Test2 {
             return;
         }
         int middle = (start + end) / 2;
-        int index = partition3(array, middle, start, end);
+        int index = partition2(array, middle, start, end);
         if (index > start) {
             quickSort2(array, start, index - 1);
         }
@@ -302,7 +302,7 @@ public class Test2 {
     }
 
     /**
-     * 这种双指针partition有问题，例如[1,3,4,5,2,2,2,2,2] -> [1,3,4,5,2,2,2,2,2]
+     * 双指针partition
      */
     public static int partition2(int[] array, int index, int start, int end) {
         int pivot = array[index];
@@ -327,7 +327,7 @@ public class Test2 {
     }
 
     /**
-     * 这版artition和剑指Offer版本的区别在于pivot选在首位。
+     * 这版partition和剑指Offer版本的区别在于pivot选在首位。
      */
     public static int partition3(int[] array, int index, int start, int end) {
         swap(array, index, start);
@@ -611,7 +611,7 @@ public class Test2 {
     /**
      * 生成x和y之间的随机数，包括x和y。
      */
-    public static int Random(int x, int y) {
+    public static int random(int x, int y) {
         int max = Math.max(x, y);
         int min = Math.min(x, y);
         return (int) (Math.random() * (max - min + 1) + min);

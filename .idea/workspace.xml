@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/interview/Main9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/practice/Prac68.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/Test8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/META-INF/sword_to_offer.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac61.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/practice/Prac61.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test2.java" afterDir="false" />
     </list>
@@ -83,7 +77,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -192,6 +186,7 @@
       <workItem from="1587599080217" duration="7270000" />
       <workItem from="1587612512616" duration="46000" />
       <workItem from="1587612746764" duration="74000" />
+      <workItem from="1588257714114" duration="1250000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
@@ -218,7 +213,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -239,26 +234,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="interview" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom" timestamp="1587660333141">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1587773907422">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587660333141" />
-    <state width="1493" height="306" key="GridCell.Tab.0.center" timestamp="1587660333140">
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587773907422" />
+    <state width="1493" height="306" key="GridCell.Tab.0.bottom" timestamp="1587742965724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587660333140" />
-    <state width="1493" height="306" key="GridCell.Tab.0.left" timestamp="1587660333140">
+    <state width="1493" height="306" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
+    <state width="1493" height="306" key="GridCell.Tab.0.center" timestamp="1587742965724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587660333140" />
-    <state width="1493" height="306" key="GridCell.Tab.0.right" timestamp="1587660333140">
+    <state width="1493" height="306" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
+    <state width="1493" height="306" key="GridCell.Tab.0.left" timestamp="1587742965724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587660333140" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1587612801444">
+    <state width="1493" height="306" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
+    <state width="1493" height="306" key="GridCell.Tab.0.right" timestamp="1587742965724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587612801444" />
+    <state width="1493" height="306" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587742928095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587742928095" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1587742928095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587742928095" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1587742928095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587742928095" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1587742928095">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587742928095" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1587773892067">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587773892067" />
+    <state x="478" y="14" width="580" height="795" key="find.popup" timestamp="1588002045966">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="478" y="14" width="580" height="795" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1588002045966" />
+    <state x="209" y="32" key="new project wizard" timestamp="1587692367795">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="32" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1587692367795" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1587660075271">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

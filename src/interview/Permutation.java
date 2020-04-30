@@ -44,14 +44,14 @@ public class Permutation {
     // DFS - 包含重复数的全排列，例如{2, 2} -> 2 2, 2 2
     public static void permute2(int array[], int index, ArrayList<String> permutations) {
         int length = array.length;
-        List<Integer> exis = new ArrayList<Integer>();// 存放第零个位置已经有过的数字
+        List<Integer> exist = new ArrayList<Integer>();// 存放第零个位置已经有过的数字
         if (index >= length - 1) { // 注意改为index >= length同样成立，因为最后一轮实际上是最后一个字符自己和自己调换，可以省去来提高效率。
             //displayArray(array);
             permutations.add(toString(array));
         } else {
             for (int i = index; i < length; i++) {
-                if (!exis.contains(array[i])) { // 如果arr[i]不在exis中，则可以把arr[i]放在第零个位置
-                    exis.add(array[i]);// 将arr[i]放进exis
+                if (!exist.contains(array[i])) { // 如果arr[i]不在exis中，则可以把arr[i]放在第零个位置
+                    exist.add(array[i]);// 将arr[i]放进exis
                     swap(array, i, index);
                     permute2(array, index + 1, permutations);
                     swap(array, i, index);
