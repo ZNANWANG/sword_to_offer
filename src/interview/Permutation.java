@@ -50,8 +50,8 @@ public class Permutation {
             permutations.add(toString(array));
         } else {
             for (int i = index; i < length; i++) {
-                if (!exist.contains(array[i])) { // 如果arr[i]不在exis中，则可以把arr[i]放在第零个位置
-                    exist.add(array[i]);// 将arr[i]放进exis
+                if (!exist.contains(array[i])) { // 如果arr[i]不在exist中，则可以把arr[i]放在第零个位置
+                    exist.add(array[i]);// 将arr[i]放进exist
                     swap(array, i, index);
                     permute2(array, index + 1, permutations);
                     swap(array, i, index);

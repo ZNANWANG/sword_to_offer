@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="">
+    <list default="true" id="05554d7e-551f-4154-bc52-193efaf7b367" name="Default Changelist" comment="change some variable names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/test/Test2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/sword_to_offer/Interview/Permutation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/sword_to_offer/Interview/Permutation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interview/Permutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/interview/Permutation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +80,22 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\IdeaProjects\sword_to_offer\src\interview" />
-      <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
       <recent name="G:\IdeaProjects\sword_to_offer\src\byteDance" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\IdeaProjects\sword_to_offer\src\interview" />
+      <recent name="G:\IdeaProjects\sword_to_offer\src\practice" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Test2">
-    <configuration name="Prac61" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.Prac61" />
+  <component name="RunManager" selected="Application.Permutation">
+    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="interview.Permutation" />
       <module name="sword_to_offer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="practice.*" />
+          <option name="PATTERN" value="interview.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Permutation" />
         <item itemvalue="Application.Test2" />
         <item itemvalue="Application.Test7" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Prac68" />
-        <item itemvalue="Application.Prac61" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +186,8 @@
       <workItem from="1587599080217" duration="7270000" />
       <workItem from="1587612512616" duration="46000" />
       <workItem from="1587612746764" duration="74000" />
-      <workItem from="1588257714114" duration="1250000" />
+      <workItem from="1588257714114" duration="3066000" />
+      <workItem from="1588263206607" duration="58000" />
     </task>
     <task id="LOCAL-00001" summary="add new package">
       <created>1585930085947</created>
@@ -209,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586710660671</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="change some variable names">
+      <created>1588260735792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1588260735792</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,29 +239,30 @@
     <MESSAGE value="add new package" />
     <MESSAGE value="first commit" />
     <MESSAGE value="interview" />
-    <option name="LAST_COMMIT_MESSAGE" value="interview" />
+    <MESSAGE value="change some variable names" />
+    <option name="LAST_COMMIT_MESSAGE" value="change some variable names" />
   </component>
   <component name="WindowStateProjectService">
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1587773907422">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587773907422" />
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom" timestamp="1587742965724">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1588263198093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
-    <state width="1493" height="306" key="GridCell.Tab.0.center" timestamp="1587742965724">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1588263198093" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1588263198093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
-    <state width="1493" height="306" key="GridCell.Tab.0.left" timestamp="1587742965724">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1588263198093" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1588263198093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
-    <state width="1493" height="306" key="GridCell.Tab.0.right" timestamp="1587742965724">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1588263198093" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1588263198093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="306" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587742965724" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1588263198093" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1587742928095">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -274,6 +283,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587773892067" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1588260746007">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1588260746007" />
     <state x="478" y="14" width="580" height="795" key="find.popup" timestamp="1588002045966">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
